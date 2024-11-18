@@ -27,3 +27,12 @@ Introdução ao desenvolvimento web
 * Node.JS
 * Express.JS
 * Testes automatizados
+
+## 📂 Material Complementar
+
+Aqui você encontra uma lista de materiais adicionais para apoiar seus estudos e aprofundar os conhecimentos adquiridos durante o curso.
+Esse material foi produzido como resumo e principais notas de aula. 
+
+https://hexagonal-hamster-0c3.notion.site/Desenvolvimento-Front-End-JavaScript-270c2e42bce644b1972ac060f68dd6d6
+https://dust-starburst-c57.notion.site/Desenvolvimento-Back-End-JavaScript-5038d9fff41d45688f698f7d88a5a19e
+
