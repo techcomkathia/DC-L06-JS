@@ -13,17 +13,17 @@ O curso está dividido em módulos, cobrindo os principais conceitos e ferrament
 Introdução ao desenvolvimento web
 
 #### Módulo 01
-HTML & CSS
-Bibliotecas para HTML & CSS
-Javascript e DOM
+-HTML & CSS
+-Bibliotecas para HTML & CSS
+-Javascript e DOM
 
 #### Módulo 02
-Javascript/API/NPM
-React.JS
-Testes automatizados com Cypress
+-Javascript/API/NPM
+-React.JS
+-Testes automatizados com Cypress
 
 #### Módulo 03
-Banco de dados
-Node.JS
-Express.JS
-Testes automatizados
+-Banco de dados
+-Node.JS
+-Express.JS
+-Testes automatizados
