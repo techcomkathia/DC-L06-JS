@@ -12,7 +12,7 @@ O curso está dividido em módulos, cobrindo os principais conceitos e ferrament
 #### Módulo Introdutório
 Introdução ao desenvolvimento web
 
-### Módulo 01
+#### Módulo 01
 HTML & CSS
 Bibliotecas para HTML & CSS
 Javascript e DOM
