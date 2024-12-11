@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+
+    <h1>Formulários</h1>
+
+    <form style="border: 1px solid black">
+
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" placeholder="digite seu nome">
+
+            <br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="exemplo@email.com">
+
+            <br>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha">
+            <br>
+
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" placeholder="digite apenas números">
+
+            <br>
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data">
+        </fieldset>
+
+        
+
+        <fieldset>
+            <legend>Arquivo</legend>
+        
+            <label for="">Cor</label>
+            <input type="color">
+
+            <br>
+            <label for="arquivo">Arquivo</label>
+            <input type="file" id="arquivo" placeholder="selecione um arquivo">
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Endereço de envio</legend>
+                     
+            <label for="">CEP</label>
+            <input type="number">
+
+            <br>
+            <label for=""> Endereço</label>
+            <input type="text">
+
+            <br>
+            <label for="">Número</label>
+            <input type="number" name="" id="">
+
+            <br>
+            <label for="">Complemento</label> 
+            <input type="text">       
+
+            <br>
+            <label for="">UF</label>
+            <input type="text">
+            
+        </fieldset>
+
+        <fieldset>
+            <legend>Opções únicas</legend>
+
+            <label for="">Legenda para o grupo de opções</label>
+            <br>
+
+            <input type="radio" name="sexo" id="f" value="feminino">
+            <label for="f">Feminino</label>
+
+            <input type="radio" name="sexo" id="m" value="masculino">
+            <label for="m"> Masculino</label>
+
+            <input type="radio" name="sexo" id="outro" value="outro">
+            <label for="opcao3"> Outro</label>
+
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Opções múltiplas</legend>
+
+            <label for="animais">Legenda para as opções do select</label>
+            <select name="animais" id="animais">
+                <option value="gato">Gato</option>
+                <option value="cachorro">Cachorro</option>
+                <option value="peixe" disabled>Peixe</option>
+                <option value="tartaruga">Tartaruga</option>
+                <option value="passarinho">Passarinho</option>
+            </select> 
+            
+               
+            <label for="curso">Escolha seu Curso</label>
+            <select name="curso" id="curso">
+                    <option value="enfermagem" disabled>enfermagem</option>
+                    <option value="medico">medico</option>
+                    <option value="programador" >programador</option>
+                    <option value="desenvolvedor">desenvolvedor</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Textos longos</legend>
+            <textarea name="" id="" cols="40" rows="20" placeholder="digite seu texto aqui" maxlength="125"></textarea>
+        </fieldset>
+
+
+
+        <input type="submit">
+
+        
+
+
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,16 @@
+/* gabarito aula 06 */
+/* título 1 - 60px de tamanho, alinhado no centro e cor da fonte branca e cor plano de fundo azul */
+/* título 2 - 40px de tamanho, alinhado no centro e cor da fonte azul */
+
+h1{
+    text-align: center;
+    font-size: 60px;
+    color:white;
+    background-color: blue;
+}
+
+h2{
+    text-align: center;
+    font-size: 40px;
+    color:blue;
+}

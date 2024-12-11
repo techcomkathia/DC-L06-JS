@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+
+        th{
+            background-color: lightgray;
+        }
+
+    </style>
+    
+</head>
+<body>
+
+    <h1>Tabelas</h1>
+
+    <h2>Tabela Simples - Mesmo número de celulas para todas as linhas</h2>
+
+    <!-- 3 linhas e 3 colunas -->
+    <table >
+
+        <!-- linhas -->
+        <!-- 1ª linha -->
+        <tr>
+            <!-- células de títulos -->
+            <th> coluna 1</th>
+            <th> coluna 2</th>
+            <th> coluna 3</th>
+        </tr>
+
+        <!-- 2ª linha -->
+        <tr>
+            <td>linha 1, coluna 1</td>
+            <td>linha 1, coluna 2</td>
+            <td>linha 1, coluna 3</td>
+        </tr>
+
+        <!-- 3ª linha -->
+        <tr>
+            <td>linha 2, coluna 1</td>
+            <td>linha 2, coluna 2</td>
+            <td>linha 2, coluna 3</td>
+        </tr>
+    </table>
+
+    <br>
+    <table >
+
+        <!-- linhas -->
+        <!-- 1ª linha -->
+        <tr>
+            <!-- células de títulos -->
+            <th> letra</th>
+            <th> coluna 2</th>
+            <th> coluna 3</th>
+        </tr>
+
+        <!-- 2ª linha -->
+        <tr>
+            <th>A</th>
+            <td>linha 1, coluna 2</td>
+            <td>linha 1, coluna 3</td>
+        </tr>
+
+        <!-- 3ª linha -->
+        <tr>
+            <th>B</th>
+            <td>linha 2, coluna 2</td>
+            <td>linha 2, coluna 3</td>
+        </tr>
+    </table>
+
+
+    <h2>Tabelas com células 'mescladas'</h2>
+
+    <table>
+        <!-- títulos -->
+        <tr>
+            <th>Linguagens</th>
+            <th>Frameworks</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Python</td>
+            <td>Flask</td>
+        </tr>
+        <tr>
+            <td>FastAPI</td>
+        </tr>
+        <tr>
+            <td rowspan="2">JavaScript</td>
+            <td>Express</td>
+        </tr>
+        <tr>
+            <td>Node.Js</td>
+        </tr>
+    </table>
+    <br>
+    <table>
+        <tr>
+            <th >1</th>
+            <th colspan="2">2</th>
+
+        </tr>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Sexo</th>
+        </tr>
+        <tr>
+            <td>João</td>
+            <td>20</td>
+            <td>Masculino</td>
+        </tr>
+        <tr>
+            <td colspan="2" >Maria</td>
+            <!-- <td> </td> -->
+            <td>Feminino</td>
+        </tr>
+    </table>
+
+
+    <!--
+     voltaremos do intervalo de 
+    20:20:) 
+    -->
+
+    <br>
+    <table>
+        <tr>
+            <th colspan="2">Equipes</th>
+            <th>
+                <img src="imgs/ouro.png" alt="ouro" width="30">
+            </th>
+            <th>
+                <img src="imgs/prata.png" alt=" prata" width="30">
+            </th>
+            <th>
+                <img src="imgs/bronze.png" alt="bronze"width="30">
+            </th>
+            <th>Total</th>
+        </tr>
+
+        <tr>
+            <td>
+                <img src="imgs/noruega.jpg" alt="bandeira Noruega" width="30">                
+            </td>
+            <td>Noruega</td>
+            <td>16</td>
+            <td>8</td>
+            <td>13</td>
+            <td>37</td>
+        </tr>
+
+        <tr>
+            <td>
+                <img src="imgs/roc.jpg" alt="comitê olimpíco russo" width="30">                
+            </td>
+            <td>ROC</td>
+            <td>6</td>
+            <td>12</td>
+            <td>14</td>
+            <td>32</td>
+        </tr>
+
+        <tr>
+            <td>
+                <img src="imgs/alem.jpg" alt="bandeira Alemanha" width="30">                
+            </td>
+            <td>Alemanha</td>
+            <td>12</td>
+            <td>10</td>
+            <td>5</td>
+            <td>27</td>
+        </tr>
+        <tr>
+            <td>
+                <img src="imgs/canada.jpg" alt="bandeira Canadá" width="30">                
+            </td>
+            <td>Canadá</td>
+            <td>4</td>
+            <td>8</td>
+            <td>14</td>
+            <td>26</td>
+        </tr>
+        <tr>
+            <td>
+                <img src="imgs/EUA.jpg" alt="bandeira EUA" width="30">                
+            </td>
+            <td>Estados Unidos da America</td>
+            <td>8</td>
+            <td>10</td>
+            <td>7</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <th>Total</th>
+            <td>46</td>
+            <td>48</td>
+            <td>56</td>
+            <td>207</td>
+        </tr>
+    </table>
+
+
+
+
+    
+    
+</body>
+</html>

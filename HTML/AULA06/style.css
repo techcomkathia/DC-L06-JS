@@ -1,0 +1,27 @@
+p{
+    /* cores nomeadas */
+    color:rgb(48, 0, 0);
+    text-align: justify;
+    font-size: 15px;
+}
+
+h1{
+    /* cores hexadecimais */
+    color:#1500ffea;
+    text-align: center;
+}
+
+h2{
+    /* cores RGB - vermelho, verde, azul */
+    color:rgba(116, 19, 95, 0.9);
+    text-align: center;
+}
+
+/* seletor para classes */
+.preto{
+    background-color: black;
+    color: white;
+}
+
+/* título 1 - 60px de tamanho, alinhado no centro e cor da fonte branca e cor plano de fundo azul */
+/* título 2 - 40px de tamanho, alinhado no centro e cor da fonte azul */

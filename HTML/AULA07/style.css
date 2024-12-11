@@ -1,0 +1,52 @@
+body{
+    background-color: aqua;
+}
+
+header{
+    background-color: blue;
+}
+
+header h1{
+    background-color: red;
+}
+
+nav a{
+    color:aliceblue
+}
+
+/* seletor de tag */
+h1{
+    color:rgb(240, 240, 240);
+    background-color: black;
+    font-size: 50px;
+    font-weight: 100;
+    font-family:Arial, Helvetica, sans-serif ;
+}
+
+p{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+/* seletor de classe */
+.nomeClasse{
+ background-color: burlywood;
+ font-weight: 800;
+}
+
+/* seletor de id */
+#css{
+    color: red
+
+}
+
+/* seletores de lista */
+p, li, h2{
+    font-size: 20px ;
+}
+
+/* seletor de afiliação */
+
+div p {
+    color: green;
+}
