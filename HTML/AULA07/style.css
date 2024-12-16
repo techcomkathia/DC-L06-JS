@@ -1,4 +1,4 @@
-body{
+/* body{
     background-color: aqua;
 }
 
@@ -15,7 +15,7 @@ nav a{
 }
 
 /* seletor de tag */
-h1{
+/* h1{
     color:rgb(240, 240, 240);
     background-color: black;
     font-size: 50px;
@@ -25,28 +25,59 @@ h1{
 
 p{
     font-family: 'Courier New', Courier, monospace;
-}
+} */
 
 
 /* seletor de classe */
-.nomeClasse{
+/* .nomeClasse{
  background-color: burlywood;
  font-weight: 800;
 }
 
 /* seletor de id */
-#css{
+/* #css{
     color: red
 
-}
+} */
 
 /* seletores de lista */
-p, li, h2{
+/* p, li, h2{
     font-size: 20px ;
-}
+} */
 
 /* seletor de afiliação */
 
-div p {
+/* div p {
     color: green;
+} */ 
+
+
+#um{
+    background-color: blue;
+    border: 10px solid black;
+    /* um valor para margin ou padding - aplica a todas as laterais */
+    padding: 15px;
+    margin-bottom:30px ;
+}
+
+#dois{
+    background-color: red;
+    border: 20px solid green;
+    padding:5px;
+    margin-left: 60px;
+    width: 300px;
+}
+
+/* todas as margins/paddings diferentes 
+ 1 topo, 2 direita, 3 baixo, 4 esquerda
+
+*/
+
+div{
+    display: inline-block;
+}
+
+a{
+    background-color: aqua;
+    width: 500px;
 }

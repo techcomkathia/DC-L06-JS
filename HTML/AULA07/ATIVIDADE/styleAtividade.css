@@ -1,0 +1,56 @@
+body{
+    background-color: black;    
+}
+
+header{
+    background-color: gray;
+    color: white;
+    padding: 20px;
+    /* height: 150px; */
+    text-align: center;
+
+}
+
+/* nav{   
+    width: 800px;
+    margin: auto;
+} */
+
+div{
+    background-color: rgba(188, 188, 188, 0.5);
+    color: black;
+    text-align: center;
+    width: 800px;
+    /* adicione um espaçamento interno na base e no topo da div de 20px */
+    /* faça com que a div se posicione no centro da tela usando a propriedade margin */
+    padding:20px 0px ;
+    margin: 20px auto;
+    border-radius:10px ;    
+}
+
+h1, h2{
+    text-align: center;
+    font-size: 40px;
+    font-family: Arial;
+}
+
+a{
+    font-size: 15px;
+    font-family: Arial;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+nav li {
+    display: inline;
+    margin: 0px 10px;
+    padding: 10px ;
+    background-color: rgb(55, 55, 55);
+    border-radius: 10px ;
+}
+
+
+
+
+
+/* para os li da lista, faça com que eles se posicionem um ao lado do outro com um afastamento de 10px entre eles */
