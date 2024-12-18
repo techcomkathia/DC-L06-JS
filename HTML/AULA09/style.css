@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;     
+    box-sizing: border-box;
+}
+
+:root{
+    /* possibilidade de criar variáveis globais */
+    --corTitulos: rgb(0, 0, 0);
+    --corBotoes: blue;
+    --corBg: green;
+    --fonteTitulos: 'Courier New', Courier, monospace;
+    --fonteBotoes: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+h1{
+    color: var(--corTitulos);
+    font-family: var(--fonteTitulos);
+}
+
+.classe{
+
+}
+
+#id{
+
+}
+
+
+h1:hover{
+    /* aplica estes etilos de css quando o mouse estiver em cima do elemento */
+    color: var(--corPrincipal);
+    font-size: x-large;
+    background-color: aqua;
+}
+

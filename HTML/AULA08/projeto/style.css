@@ -2,35 +2,50 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: white;
 }
+
+body{
+    background-image: url(imagens/bg.png); 
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+
 
 header{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: #1e1f22;
+    padding: 25px;
 }
+
+
+
+
 
 ul{
     display: flex;
     justify-content: space-around;
-    /* background-color: brown; */
+
 }
 
 nav ul li {
     margin: 10px;
     padding: 10px 10px;
+    list-style-type: none;
 }
 
-.boxProduto{
-    display: flex;
-    background-color: wheat;
-    justify-content: center;
-    align-items: center;
-    width: 800px;
-   
+a{
+    text-decoration: none;
 }
+
+.logo{
+    width: 250px;
+}
+
 
 main{
     display: flex;
@@ -40,7 +55,53 @@ main{
     flex-wrap: wrap;
 }
 
+h1, h2, h3 {
+    margin: 20px;
+    text-align: center;
+}
+
+
+
+h2 {
+    color: #ffae00;
+    text-align: center;
+}
+
+.boxProduto{
+    display: flex;
+    background-color: rgba(44, 43, 42, 0.9);
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 890px;
+    border-radius: 10px;
+   
+}
+
+.boxTexto{
+    width: 400px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify ;
+
+    /* text-align: center; */
+
+}
+
+
 
 img{
     width: 300px;
+}
+
+.btn{
+    width: 150px;
+    background-color: #ffae00;
+    margin: 10px 0px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
 }
