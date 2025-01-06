@@ -1,14 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Dirt&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: white;
+   
 }
+
+
+/* criação das variáveis para a aplicação */
+
+:root{
+    --corBgHeader : #1e1f22;
+    --corTexto: #ffffff;
+    --corTitulosBtn : #ffae00; 
+    --corBgCards : rgba(37, 37, 37, 0.8);
+    --arredondamento: 5px;
+    --zoomImagem: 500px;
+    --fonte: 'Roboto', sans-serif;  
+    /* 4 variaveis de cor */
+
+}
+
 
 body{
     background-image: url(imagens/bg.png); 
     /* background-repeat: no-repeat;
     background-size: cover; */
+    color: var(--corTexto);
+    font-family: var(--fonte);
 }
 
 
@@ -18,8 +38,9 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #1e1f22;
+    background-color: var(--corBgHeader);
     padding: 25px;
+
 }
 
 
@@ -40,10 +61,28 @@ nav ul li {
 
 a{
     text-decoration: none;
+    color: var(--corTexto);
+}
+
+/* para os links (a)aplicar um hover que irá mostrar um background amarelo, arredondamento de bordas de 10px (padrão da aplicação) e um padding de 10px */
+
+li:hover{
+    background-color: var(--corTitulosBtn);
+    border-radius: var(--arredondamento);
+    padding: 10px;
+}
+
+/* hover btn : borda branca, letra negrita e cor branca  */
+
+.btn:hover{
+    border:2px solid var(--corTexto);
+    font-weight: bold;
+    color: var(--corTexto);
 }
 
 .logo{
     width: 250px;
+    z-index: 3;
 }
 
 
@@ -63,13 +102,13 @@ h1, h2, h3 {
 
 
 h2 {
-    color: #ffae00;
+    color:var(--corTitulosBtn);
     text-align: center;
 }
 
 .boxProduto{
     display: flex;
-    background-color: rgba(44, 43, 42, 0.9);
+    background-color:var(--corBgCards);
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
@@ -97,11 +136,17 @@ img{
     width: 300px;
 }
 
+/* img:hover{
+    width: var(--zoomImagem);
+} */
+
 .btn{
     width: 150px;
-    background-color: #ffae00;
+    background-color:var(--corTitulosBtn);
     margin: 10px 0px;
     padding: 10px;
     border: none;
-    border-radius: 10px;
+    border-radius: var(--arredondamento);
 }
+
+
