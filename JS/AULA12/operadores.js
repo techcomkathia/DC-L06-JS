@@ -34,12 +34,12 @@ console.log(multiplicacaoLetra)
 
 
 
-let idade = 20
+let idade = '20'
 console.log(idade)
 //idade = prompt('Qual a sua idade?') // sempre retorna uma string
 console.log(idade)
 console.log(typeof idade)
-console.log( idade + 100) // concatena
+console.log( idade + 100) 
 console.log( idade - 100) 
 console.log( idade * 100) 
 console.log( idade / 100) 
@@ -68,4 +68,5 @@ let salario = prompt('Qual o seu salario?(Ex.: 1000.50)') // sempre retorna uma 
 salario = Number(salario)
 salario = salario + 1000 // importante converter o salario para number antes de adicionar 1000, caso contrário o JS vai fazer a operação como string
 console.log(salario)
-
+alert('sou mostrado na tela')
+confirm('faz uma pergunta ao usuário e retorna true/false')
