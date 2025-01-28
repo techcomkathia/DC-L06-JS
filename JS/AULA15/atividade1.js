@@ -1,6 +1,6 @@
 /*Faça um programa que leia a nota de N alunos, em seguida exiba a média das notas*/
 
-let N = Number(prompt('Digite a quantidade de alunos')) // determinar quantas vezes o lanço vai ser repetido 
+let N = Number(prompt('Digite a quantidade de alunos')) // determinar quantas vezes o lanço vai ser repetido no loop  
 
 let somaNotas = 0 // acumulador -> guarda as notas somadas
 let media = 0
