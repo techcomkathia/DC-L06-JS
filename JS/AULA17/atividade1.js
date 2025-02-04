@@ -21,7 +21,7 @@ function dividir(a, b) {
     }else{
         console.log('Divisão por zero é impossível');
         
-    }
+    } Math.floor()
 }
 
 // construa uma função chamada calculadora
