@@ -44,7 +44,11 @@ console.log(itensClasseDestaque[0])
 // remover a classe vermelho do primeiro
 // adicionar a classe azul ao primeiro
 
+let itensLista = document.getElementsByClassName('lista');
 
+console.log(itensLista);
+itensLista[0].classList.remove('vermelho');
+itensLista[0].classList.add('azul');
 
 
 
