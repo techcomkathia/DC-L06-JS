@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            display: flex;
+            max-width: 400px;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid black;
+        }
+
+        #retangulo {
+            width: 250px;
+            height: 100px;
+            background-color: white;
+            border: 2px solid black;
+            margin: 2rem;
+        }
+
+        button{
+            color: white;
+            padding: 10px;
+            width: 80px;
+            margin: 10px 2px;
+        }
+
+        #botaoAzul{
+            background-color: blue;
+        }
+
+        #botaoVerde{
+            background-color: green;
+        }
+
+        #botaoVermelho{
+            background-color: red;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Atividade 1</h1>
+        <p>Ao clicar no botão a cor respectiva será aplicada como plano de fundo do retângulo abaixo. Ao passar o mouse por cima do retângulo a cor de fundo mudará para o padrão branco</p>
+        <div id="retangulo"></div>    
+        <div>
+            <button id="botaoAzul"> Cor 1 </button>
+            <button id="botaoVerde"> Cor 2 </button>
+            <button id="botaoVermelho"> Cor 3 </button> 
+        </div>
+    </div>    
+</body>
+</html>

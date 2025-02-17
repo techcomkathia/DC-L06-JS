@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .bordaVermelha{
+            border: 5px solid red;
+        }
+
+        img{
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="titulo">Eventos no DOM</h1>
+
+    <button onmouseover="mostrarMensagem()" onmouseout="apagarMensagem()" onclick="alert('clicou no botão com o mouse')">Passe o mouse em cima</button>
+
+    <br>
+    <img src="images.jpeg" alt="gatinho" width="100" id="imgGatinho" onclick="zoomImagem('20px')" onmouseout="zoomImagem('200px')">
+
+    <ul>
+        <li onclick="clicarNoBotao('Káthia')">Clique em um elemento - onClick </li>
+        <li>Passa o mouse sobre um elemento - onMouseOver</li>
+        <li>Pressiona o botão - onKeyPress</li>
+        <li>Mudança de foco - onFocus</li>
+        <li>Mudança de valor - onChange</li>
+    </ul>
+
+    <button id="btnClick" onclick=" clicarNoBotao('Káthia')" >Clique</button>
+
+    <!-- ao clicar irá ser executado a função -->
+    <!-- envento inline será adicionado ao botão com a propriedade onclick -->
+
+
+
+    <button id="btnMouseOver" onmouseout="mouseEmCimaBotao()">Passe o mouse</button>
+
+
+
+
+    <button>Pressione o botão do teclado </button>
+    <input type="text" name="nome" id="nome" placeholder="digite seu nome">
+    <input type="text" placeholder="digite algo aqui e click fora">    
+
+    <script src="script.js"></script>
+</body>
+</html>
