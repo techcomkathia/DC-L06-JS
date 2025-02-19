@@ -22,6 +22,7 @@
     <button onmouseover="mostrarMensagem()" onmouseout="apagarMensagem()" onclick="alert('clicou no botão com o mouse')">Passe o mouse em cima</button>
 
     <br>
+    
     <img src="images.jpeg" alt="gatinho" width="100" id="imgGatinho" onclick="zoomImagem('20px')" onmouseout="zoomImagem('200px')">
 
     <ul>
@@ -40,13 +41,13 @@
 
 
     <button id="btnMouseOver" onmouseout="mouseEmCimaBotao()">Passe o mouse</button>
+    <br>
 
-
-
-
-    <button>Pressione o botão do teclado </button>
-    <input type="text" name="nome" id="nome" placeholder="digite seu nome">
-    <input type="text" placeholder="digite algo aqui e click fora">    
+    <!-- eventos adicionado diretamente no arquivo js -->
+    <img src="desligada.jpg" alt="desligada" id="lampada">
+    
+    <button id="btnLigar">Ligar</button>
+    <button id="btnDesligar">Desligar</button>
 
     <script src="script.js"></script>
 </body>

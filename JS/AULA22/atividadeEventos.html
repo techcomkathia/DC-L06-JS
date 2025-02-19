@@ -41,6 +41,8 @@
             background-color: red;
         }
 
+
+
     </style>
 
 </head>
@@ -48,12 +50,18 @@
     <div class="container">
         <h1>Atividade 1</h1>
         <p>Ao clicar no botão a cor respectiva será aplicada como plano de fundo do retângulo abaixo. Ao passar o mouse por cima do retângulo a cor de fundo mudará para o padrão branco</p>
-        <div id="retangulo"></div>    
-        <div>
-            <button id="botaoAzul"> Cor 1 </button>
-            <button id="botaoVerde"> Cor 2 </button>
-            <button id="botaoVermelho"> Cor 3 </button> 
+        <div id="retangulo" onmouseover="mudarCor('#ffffff')">
+
         </div>
-    </div>    
+            <!-- adicionar evento  -->
+        <div>
+            <!-- adicionar eventos a cada um dos botões -->
+            <button id="botaoAzul" onclick="mudarCor('blue')"> Cor 1 </button>
+            <button id="botaoVerde" onclick="mudarCor('green')"> Cor 2 </button>
+            <button id="botaoVermelho" onclick="mudarCor('red')"> Cor 3 </button> 
+        </div>
+    </div>   
+    
+    <script src="atividadeEventos.js"></script>
 </body>
 </html>
