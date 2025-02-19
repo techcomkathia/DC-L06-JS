@@ -27,17 +27,6 @@ function validarCampos() {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 // cadastrarUsuario - a função cadastrarUsuario irá adicionar um novo usuário na lista caso todos os campos sejam preenchidos
 //-------------------------------------------------------
 // 3º Passo - remover o evento pre definido do formulario
