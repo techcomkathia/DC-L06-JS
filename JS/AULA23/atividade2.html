@@ -9,16 +9,17 @@
 <body>
 
     <form class="border border-primary p-3 m-3 rounded">
-        <div class="mb-3">
+        <div class="mb-3" id="divNome">
             <label for="nome" class="form-label">Nome</label>
             <input type="text" class="form-control" id="nome" placeholder="Seu nome completo">
         </div>
-        <div class="mb-3">
+        <div class="mb-3" id="divCargo">
             <label for="cargo" class="form-label">Cargo</label>
             <input type="text" class="form-control" id="cargo" placeholder="Cargo" >
+            <!-- MENSAGEM DE ERRO ESPECÍFICA -->
         </div>
 
-        <div class="mb-3">
+        <div class="mb-3" id="divImagem">
             <label for="imagem" class="form-label">imagem</label>
             <input type="url" class="form-control" id="imagem" placeholder="url imagem">
         </div>
@@ -42,6 +43,8 @@
         <!-- ao clicar em enviar, se todos os dados estiverem preenchidos, criar um novo card com as informações e adicionar ao container -->
 
     </div>
+
+    <script src="atividade2.js"></script>
     
 </body>
 </html>
