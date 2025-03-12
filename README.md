@@ -36,3 +36,16 @@ Esse material foi produzido como resumo e principais notas de aula.
 * <a href='https://hexagonal-hamster-0c3.notion.site/Desenvolvimento-Front-End-JavaScript-270c2e42bce644b1972ac060f68dd6d6'>Resumo Front<a>
 * <a href='https://dust-starburst-c57.notion.site/Desenvolvimento-Back-End-JavaScript-5038d9fff41d45688f698f7d88a5a19e'>Resumo Back<a>
 
+
+
+
+npm create vite@latest
+- indicar nome do projeto
+- selecionar framework (React)
+- selecionar a variante (javaScript)
+
+- após a finalização da criação do projeto
+cd pastaNomeProjeto
+npm install
+npm run dev
+
