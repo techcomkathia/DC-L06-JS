@@ -40,3 +40,15 @@
 .read-the-docs {
   color: #888;
 }
+
+.infoProduto{
+  border: 2px solid rgb(12, 220, 203);
+  padding: 10px;
+  margin: 10px;
+}
+
+.containerProdutos{
+  border: 2px solid rgb(195, 20, 248);
+  padding: 10px;
+  margin: 10px;
+}
