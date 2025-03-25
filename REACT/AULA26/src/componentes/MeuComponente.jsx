@@ -40,3 +40,5 @@ const filme={
 
 // crie um componente chamado Filme
 // ele deve renderizar uma imagem, um título, uma nota, uma duração, uma data de estreia, um elenco e o resumo
+
+
