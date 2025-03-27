@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import FormularioRevisao from './componentes/FormularioRevisao'
 import CadastroUsuario from './componentes/CadastroUsuario'
+import ListaCompras from './componentes/ListaCompras'
 
 function App() {
  
@@ -12,8 +13,12 @@ function App() {
     <>
       <h1>Aula 30 React - Eventos em formulários</h1>
 
-      <FormularioRevisao/>
-      <CadastroUsuario/>
+      {/* <FormularioRevisao/>
+      <CadastroUsuario/> */}
+
+      <ListaCompras></ListaCompras>
+
+      
     </>
   )
 }
