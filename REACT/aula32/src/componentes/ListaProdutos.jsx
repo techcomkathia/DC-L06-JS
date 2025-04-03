@@ -1,6 +1,16 @@
-// montar a tela com todos os produtos da lista de produtos disponiveis na api the fake store
 
-// use os hooks useState e useEffect
-// use o fetch para carregar os produtos recebidos da api na variavel produtos (setProdutos)
+import CardProduto from "./CardProduto"
 
-//use o hook useEffect para evitar a chamada na api em loop na montagem da tela do componente
+function ListaProdutos({lista}) {
+    return(
+        <div className="d-flex flex-wrap justify-content-center align-items-center">
+            {lista.map((produto)=>{
+                return(
+                    <CardProduto key={produto.id} img={produto.image} titulo={produto.title} descricao={produto.description}></CardProduto>
+                )
+            })}
+        </div>
+    )
+}
+
+export default ListaProdutos

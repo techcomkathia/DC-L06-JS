@@ -25,7 +25,7 @@ function ListaUsuarios(){
     useEffect(()=>{
         console.log('Sou uma função que é executada quando a variável carregou for alterada')
        
-    },[carregou])
+    },[carregou]) // essa funcao sera executada toda vez que a variavel carregou for alterada
    
     console.log('Sou um console.log que fui executado na atualização do componente') // sera executado toda vez que o componente for atualizado
     
@@ -41,4 +41,10 @@ function ListaUsuarios(){
     )
 }
 
+function Componente2(){
+    return(<div></div>)
+}
+
 export default ListaUsuarios
+
+export {Componente2}
