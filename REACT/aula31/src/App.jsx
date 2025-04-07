@@ -8,7 +8,12 @@ import Atividade1 from './componentes/Atividade1'
 import ListaProdutos from './componentes/ListaProdutos'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [produtos, setProdutos] = useState([])
+
+  function buscarProdutos() {
+    
+  }
+  
   let produtosTeste = [
     {id: 1, nome: 'Produto 1', preco: 100, img: 'https://placehold.co/600x400', descricao: 'Produto 1 descrição' },
     {id: 2, nome: 'Produto 2', preco: 200, img: 'https://placehold.co/600x400', descricao: 'Produto 2 descrição' },

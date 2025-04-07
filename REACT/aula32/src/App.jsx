@@ -3,6 +3,7 @@ import { useEffect } from 'react'
 import './App.css'
 import ListaProdutos from './componentes/ListaProdutos'
 import CardProduto from './componentes/CardProduto'
+import BuscarCEP from './componentes/BuscarCEP'
 
 
 
@@ -45,12 +46,14 @@ function App() {
   return (
     <>
 
-      <button onClick={()=>setId(id+1)}>Mostrar próximo produto</button>
+      {/* <button onClick={()=>setId(id+1)}>Mostrar próximo produto</button>
 
       <CardProduto img={produto.image} titulo={produto.title} descricao={produto.description}></CardProduto>
 
       <h1>Lista de produtos</h1>
-      <ListaProdutos lista={listaProdutos} />    
+      <ListaProdutos lista={listaProdutos} />     */}
+
+      <BuscarCEP></BuscarCEP>
      
     </>
   )
