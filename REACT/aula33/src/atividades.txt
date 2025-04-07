@@ -6,3 +6,6 @@ configure as rotas
         importe as páginas
 Cconfigure o acesso as rotas no aquivo app
         app.jsx -> importe o BrowserRouter e o arquivo Rotas
+
+
+https://github.com/techcomkathia/DC-L06-JS/tree/main/REACT/aula33/src
