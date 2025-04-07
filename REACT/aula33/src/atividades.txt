@@ -1,0 +1,8 @@
+crie 2 páginas  
+        src/paginas/Pagina1  src/paginas/Pagina2
+configure as rotas 
+        src/rotas/Rotas
+        importe Route e Routes
+        importe as páginas
+Cconfigure o acesso as rotas no aquivo app
+        app.jsx -> importe o BrowserRouter e o arquivo Rotas
