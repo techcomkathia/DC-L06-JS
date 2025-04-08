@@ -12,6 +12,10 @@ function Cabecalho() {
                 <li>
                     <Link to={"/produtos"}>Produtos</Link>
                 </li>
+
+                <li>
+                    <Link to={"/produtos/2"}>Produto Destaque</Link>
+                </li>
             </nav>
            
         </div>
