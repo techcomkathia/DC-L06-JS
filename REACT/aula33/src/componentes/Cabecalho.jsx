@@ -1,8 +1,20 @@
+import { Link } from "react-router-dom"
+
 function Cabecalho() {
     return (
-        <>
-            <h1>Curso de React</h1>
-        </>
+        <div>
+            <h1>Cabeçalho</h1>
+            <nav>
+                <li>
+                    <Link to={"/"}>Home</Link>
+                </li>
+
+                <li>
+                    <Link to={"/produtos"}>Produtos</Link>
+                </li>
+            </nav>
+           
+        </div>
     )
 }
 

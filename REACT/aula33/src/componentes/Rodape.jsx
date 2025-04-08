@@ -1,7 +1,7 @@
 function Rodape() {
     return (
         <>
-            <h5>Outras informações</h5>
+            <h1>Rodapé</h1>
         </>
     )
 }
