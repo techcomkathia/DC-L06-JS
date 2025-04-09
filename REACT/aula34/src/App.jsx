@@ -1,10 +1,19 @@
 import './App.css'
+import Rotas from './rotas/Rotas'
+import { BrowserRouter } from 'react-router-dom'
+import Template from './Template'
 
 function App() {
 
   return (
-    <>
-      <h1 className='text-success'>Projeto Aula 34</h1>
+    <>      
+      <BrowserRouter>
+ 
+        <Template>
+          <Rotas/>
+        </Template>
+
+      </BrowserRouter>
     </>
   )
 }
