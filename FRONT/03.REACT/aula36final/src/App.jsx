@@ -4,21 +4,21 @@ import Rodape from './componentes/Rodape'
 import Cabecalho from './componentes/Cabecalho'
 import { BrowserRouter } from 'react-router-dom'
 import Rotas from './Rotas'
+import { ContextoFuncionarios } from './contexto/FuncionariosProvider'
+import FuncionariosProvider from './contexto/FuncionariosProvider'
 
 function App() {
  
 
   return (
     <>
-
+    <FuncionariosProvider>
       <BrowserRouter>
-
-        <Cabecalho/>
-          <Rotas/>
+        <Cabecalho/>          
+            <Rotas/>   
         <Rodape/>
-
       </BrowserRouter>
-      
+    </FuncionariosProvider> 
     </>
   )
 }

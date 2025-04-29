@@ -1,0 +1,35 @@
+create database cleitinhoTelecon;
+
+use cleitinhoTelecon;
+
+create table PessoaFisica (
+	pfid int primary key auto_increment,
+    Nome varchar(255),
+    Sobrenome varchar(255),
+    CPF int(12),
+    RG int(20),
+    DataDeNascimento date
+);
+
+create table cliente (
+	id int primary key auto_increment
+);
+
+
+create table TipoContatos (
+	tcid int primary key auto_increment,
+    nome varchar(255) not null
+);
+
+create table Contatos (
+	cid int primary key auto_increment,
+    nome varchar(255) not null,
+    campo varchar(255) not null,
+    obs text,
+    tipoContato_tcid int,
+    cliente_id int,
+    foreign key (tipoContato_tcid) references TipoContatos(tcid),
+    foreign key (cliente_id) references Cliente(id)
+);
+
+
