@@ -1,7 +1,7 @@
 # Desenvolvimento Full Stack JavaScript  
 **Turma Live 6 - Digital College**
 
-Bem-vindo(a) ao repositório oficial do curso **Desenvolvimento Full Stack JavaScript** da turma **Live 6** da **Digital College**! Este repositório contém materiais, exercícios e projetos relacionados aos módulos abordados ao longo do curso.
+Bem-vindo(a) ao repositório oficial da turma **Live 6** da **Digital College** do curso **Desenvolvimento Full Stack JavaScript** ! Este repositório contém materiais, exercícios e projetos relacionados aos módulos abordados ao longo do curso.
 
 ## 📚 Estrutura do Curso
 
