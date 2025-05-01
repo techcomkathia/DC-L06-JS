@@ -11,10 +11,13 @@ create table PessoaFisica (
     DataDeNascimento date
 );
 
+alter table exemplo 
+modify idExemplo int auto_increment primary key;
+
+
 create table cliente (
 	id int primary key auto_increment
 );
-
 
 create table TipoContatos (
 	tcid int primary key auto_increment,
@@ -31,5 +34,33 @@ create table Contatos (
     foreign key (tipoContato_tcid) references TipoContatos(tcid),
     foreign key (cliente_id) references Cliente(id)
 );
+
+-- AULA 02 ALTERAÇÕES EM TABELAS
+
+
+-- alteração da tabela para adicionar uma nova coluna
+alter table PessoaFisica add column cliente_id int;
+-- alterar para inserir a chave estrangeira
+alter table PessoaFisica 
+add constraint fk_clienteId
+foreign key (cliente_id) references cliente(id);
+
+
+create table exemplo (
+	idExemplo int,
+    nome varchar(50)
+);
+
+
+
+
+
+
+
+
+
+
+
+
 
 
