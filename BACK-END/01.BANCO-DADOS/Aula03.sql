@@ -30,5 +30,14 @@ CREATE TABLE users_has_projects (
 
 -- DDL 
 -- Mude o tipo de dado da tabela projects na coluna date (do banco de dados da ATIVIDADE 3) para DATE
+alter table projects
+modify column date date;
+
 -- Mude o valor padrão para as senhas da tabela users para 123mudar
+alter table users
+alter column password set default '123mudar';
+
+-- outra opção considerando a mudança de tipo de dado
+alter table users
+modify column password varchar(20) not null default '123mudar';
 
