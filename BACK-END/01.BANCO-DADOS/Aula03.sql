@@ -69,6 +69,10 @@ INSERT INTO users (name, userName,email) VALUES
 INSERT INTO users (id, name, userName,email) VALUES
 ('k','NÃO', 'NÃO?', 'NÃO@empresa.com');
 
+-- Considerar as situações:
+-- O projeto de Manutenção atrasou, mudar a data para 12/09/2014
+-- O username de aparecido (usar o nome como condição de mudança) está feio, mudar para Rh_cido
+
 
 
 
