@@ -41,3 +41,39 @@ alter column password set default '123mudar';
 alter table users
 modify column password varchar(20) not null default '123mudar';
 
+-- inserir informações na tabela usuarios 
+INSERT INTO users (name, userName,email) VALUES
+('Maria', 'rh_maria', 'maria@empresa.com');
+
+INSERT INTO users (name, userName, password, email) VALUES
+('Paulo', 'Ti_paulo', '123@456', 'paulo@empresa.com'),
+('Ana', 'rh_ana', '123mudar', 'clara@empresa.com');
+
+-- inserir um registro com o id informado, passando por cima da instrução de auto-incremento
+INSERT INTO users (id, name, userName,email) VALUES
+(100, 'Clara', 'clara_rh', 'clara@empresa.com');
+
+-- auto incremento com o valor de 101 ( contagem a partir do maior id)
+INSERT INTO users ( name, userName,email) VALUES
+('Aparecido', 'rh_apareci', 'aparecido@empresa.com');
+
+-- inserindo em um id já existente
+INSERT INTO users (id, name, userName,email) VALUES
+(1, 'NÃO', 'NÃO', 'NÃO@empresa.com');
+
+-- Inserindo com um userName diferente
+INSERT INTO users (name, userName,email) VALUES
+('NÃO', 'NÃO!', 'NÃO@empresa.com');
+
+-- id não numérico (cria a informação substituindo o id de char por um numero auto incremento)
+INSERT INTO users (id, name, userName,email) VALUES
+('k','NÃO', 'NÃO?', 'NÃO@empresa.com');
+
+
+
+
+
+
+
+
+
