@@ -149,5 +149,17 @@ select nomeItem, valorUnit from item where valorUnit > 50.0;
 -- Mostre o nome de todos os produtores que estejam na cidade de Fortaleza
 select nomeProdutor from produtor where cidade = 'Fortaleza';
 -- Exiba o número da nota e a data de emissão das notas fiscais emitidas no dia (definir dia cadastrado no banco)
-select numeroNf, dataNf from nf where dataNf = '2024-02-10';
+select numeroNf, dataNf from nf where dataNf ='2024-02-10';
 
+-- SELECT com Limit
+-- Mostre os 3 primeiros itens da tabela item
+select nomeItem from item limit 3;
+-- Liste os 2 primeiros produtores cadastrados na cidade de Fortaleza
+select nomeProdutor from produtor where cidade = 'Fortaleza' limit 2;
+
+
+-- SELECT com ORDER BY
+-- Liste o nome e o valor unitário dos itens ordenados do mais caro para o mais barato
+select nomeItem, valorUnit from item order by valorUnit desc;
+-- Exiba os nomes dos produtores ordenados por ordem alfabética pela cidade
+select nomeProdutor, cidade from produtor order by cidade asc;
