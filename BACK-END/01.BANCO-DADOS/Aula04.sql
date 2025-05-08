@@ -99,5 +99,55 @@ INSERT INTO venda (fkNf, fkItem, fkProd, quantidade, desconto) VALUES
 (7, 2, 2, 10, 4),
 (7, 4, 5, 10, 1);
 
+ALTER TABLE produtor
+ADD rua VARCHAR(100),
+ADD cidade VARCHAR(100),
+ADD uf CHAR(2); -- duas letras para o estado, como "SP", "MG"
 
- 
+UPDATE produtor
+SET rua = 'Rua das Flores, 100', cidade = 'Campinas', uf = 'SP'
+WHERE codProd = 1;
+
+UPDATE produtor
+SET rua = 'Estrada da Colheita, km 3', cidade = 'Sorocaba', uf = 'SP'
+WHERE codProd = 2;
+
+UPDATE produtor
+SET rua = 'Avenida Rural, 45', cidade = 'Londrina', uf = 'PR'
+WHERE codProd = 3;
+
+UPDATE produtor
+SET rua = 'Sítio Boa Esperança', cidade = 'Uberaba', uf = 'MG'
+WHERE codProd = 4;
+
+ UPDATE produtor
+SET rua = 'Chácara São João', cidade = 'Pelotas', uf = 'RS'
+WHERE codProd = 5;
+
+update item
+set valorUnitario = valorUnitario - 2
+where iditem = 5;
+
+update venda
+set desconto = 10.00
+where idVenda=1 ;
+
+update venda
+set desconto = 10.00
+where idVenda = 1 and fkItem = 3;
+
+
+-- ATIVIDADE SELECT
+-- Liste todos os dados da tabela ITEM
+select * FROM item;
+-- Liste apenas o nome dos produtores
+select nomeProdutor from produtor;
+
+-- SELECT com WHERE
+-- Liste o nome e o valor unitário dos itens cujo o valor unitário seja maior que 50 reais
+select nomeItem, valorUnit from item where valorUnit > 50.0;
+-- Mostre o nome de todos os produtores que estejam na cidade de Fortaleza
+select nomeProdutor from produtor where cidade = 'Fortaleza';
+-- Exiba o número da nota e a data de emissão das notas fiscais emitidas no dia (definir dia cadastrado no banco)
+select numeroNf, dataNf from nf where dataNf = '2024-02-10';
+
