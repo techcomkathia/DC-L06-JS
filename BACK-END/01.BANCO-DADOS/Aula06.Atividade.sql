@@ -181,12 +181,21 @@ INSERT INTO itens_venda (id_venda, id_livro, quantidade, desconto) VALUES
 -- ATIVIDADES :) para exercitar os conceitos
 
 -- 1. Liste valor total de todos os livros que estão disponíveis para venda.
-
+	select sum(preco) as totalLivros
+		from livros;
+    
 -- 2. Qual o preço médio de todos os livros da livraria? 
-
+	select avg(preco) as precoMedio
+		from livros;
+    
 -- 3. Quantos livros foram registrados na livraria? 
-
+	select count(titulo) as registroLivros
+		from livros;
 -- 4. Qual é o menor valor e maior valor para um livro?
+	select 
+	min(preco) as valorMinimo,
+	max(preco) as valorMaximo
+		from livros;
 
 
 
