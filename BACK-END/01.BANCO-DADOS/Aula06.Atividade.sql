@@ -178,7 +178,7 @@ INSERT INTO itens_venda (id_venda, id_livro, quantidade, desconto) VALUES
 (52, 26, 1, 0), (53, 27, 1, 0), (54, 28, 1, 0), (55, 29, 1, 0), (56, 30, 1, 0);
 
 
--- ATIVIDADES :)
+-- ATIVIDADES :) para exercitar os conceitos
 
 -- 1. Liste valor total de todos os livros que estão disponíveis para venda.
 
