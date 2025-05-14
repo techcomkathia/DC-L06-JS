@@ -186,26 +186,28 @@ INSERT INTO itens_venda (id_venda, id_livro, quantidade, desconto) VALUES
 
 -- 3. Quantos livros foram registrados na livraria? 
 
-
-
-
--- 4. Quantos autores têm livros que têm o preço superior a R$ 50,00. (SELECT, DISTINCT, WHERE)
-
--- 5. Encontre os 3 livros mais baratos da livraria. (SELECT, ORDER BY, LIMIT)
-
--- 6. Encontre os 3 livros mais caros da livraria. (SELECT, ORDER BY, LIMIT)
-
--- 7. Qual a quantidade total de livros vendidos por cada cliente? (SELECT, SUM, GROUP BY)
+-- 4. Qual é o menor valor e maior valor para um livro?
 
 
 
 
+-- 5. Quantos autores têm livros que têm o preço superior a R$ 50,00. (SELECT, DISTINCT, WHERE)
 
--- 8. Qual o valor total vendido de cada livro (preço x quantidade) e mostre o nome do livro e o valor total vendido. (SELECT, SUM, JOIN, GROUP BY)
+-- 6. Encontre os 3 livros mais baratos da livraria. (SELECT, ORDER BY, LIMIT)
 
--- 9. Qual o valor total vendido de cada autor (preço x quantidade) e mostre o nome do autor e o valor total vendido. (SELECT, SUM, JOIN, GROUP BY)
+-- 7. Encontre os 3 livros mais caros da livraria. (SELECT, ORDER BY, LIMIT)
 
--- 10. Qual o valor gasto de cada cliente e mostre o nome do cliente e o valor total gasto. (SELECT, SUM, JOIN, GROUP BY)
+-- 8. Qual a quantidade total de livros vendidos por cada cliente? (SELECT, SUM, GROUP BY)
 
--- 11. Mostre o nome e a quantidade de livros vendidos para cada título cujo total de vendas seja maior que 10 unidades. (SELECT, SUM, JOIN, GROUP BY, WHERE)
+
+
+
+
+-- 9. Qual o valor total vendido de cada livro (preço x quantidade) e mostre o nome do livro e o valor total vendido. (SELECT, SUM, JOIN, GROUP BY)
+
+-- 10. Qual o valor total vendido de cada autor (preço x quantidade) e mostre o nome do autor e o valor total vendido. (SELECT, SUM, JOIN, GROUP BY)
+
+-- 11. Qual o valor gasto de cada cliente e mostre o nome do cliente e o valor total gasto. (SELECT, SUM, JOIN, GROUP BY)
+
+-- 12. Mostre o nome e a quantidade de livros vendidos para cada título cujo total de vendas seja maior que 10 unidades. (SELECT, SUM, JOIN, GROUP BY, WHERE)
 
