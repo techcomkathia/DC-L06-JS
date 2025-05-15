@@ -230,14 +230,31 @@ group by clientes.nome_cliente
 order by total_itens_venda desc;
 
 
-
-
-
 -- 9. Qual o valor total vendido de cada livro (preço x quantidade) e mostre o nome do livro e o valor total vendido. (SELECT, SUM, JOIN, GROUP BY)
-
+SELECT 
+    livros.titulo,
+    SUM(livros.preco * itens_venda.quantidade) AS total_vendido
+	FROM itens_venda
+	JOIN livros ON itens_venda.id_livro = livros.id_livro
+	GROUP BY livros.titulo;
 -- 10. Qual o valor total vendido de cada autor (preço x quantidade) e mostre o nome do autor e o valor total vendido. (SELECT, SUM, JOIN, GROUP BY)
 
 -- 11. Qual o valor gasto de cada cliente e mostre o nome do cliente e o valor total gasto. (SELECT, SUM, JOIN, GROUP BY)
+select 
+	clientes.nome_cliente,
+	SUM(livros.preco * itens_venda.quantidade) AS total_vendido
+from vendas 
+	join clientes on vendas.id_cliente = clientes.id_cliente
+    join itens_venda on itens_venda.id_venda = vendas.id_venda
+    join livros on itens_venda.id_livro = livros.id_livro
+group by (clientes.nome_cliente);
+    
 
 -- 12. Mostre o nome e a quantidade de livros vendidos para cada título cujo total de vendas seja maior que 10 unidades. (SELECT, SUM, JOIN, GROUP BY, WHERE)
+SELECT livros.titulo AS nome_livro, SUM(itens_venda.quantidade) AS total_vendido
+FROM itens_venda
+inner join vendas on vendas.id_venda = itens_venda.id_venda
+inner join livros on  livros.id_livro = itens_venda.id_livro
+GROUP BY 
+    livros.titulo;
 
