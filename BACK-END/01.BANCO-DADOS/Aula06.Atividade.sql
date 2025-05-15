@@ -200,13 +200,25 @@ INSERT INTO itens_venda (id_venda, id_livro, quantidade, desconto) VALUES
 
 
 
--- 5. Quantos autores têm livros que têm o preço superior a R$ 50,00. (SELECT, DISTINCT, WHERE)
+-- 5. Quantos autores têm livros que têm o preço superior a R$ 50,00. (SELECT, DISTINCT, WHERE, COUNT)
 
 -- 6. Encontre os 3 livros mais baratos da livraria. (SELECT, ORDER BY, LIMIT)
 
 -- 7. Encontre os 3 livros mais caros da livraria. (SELECT, ORDER BY, LIMIT)
 
 -- 8. Qual a quantidade total de livros vendidos por cada cliente? (SELECT, SUM, GROUP BY)
+
+select 
+clientes.nome_cliente,
+sum(itens_venda.quantidade) as total_itens_venda,
+sum(livros.preco) as total_valor_venda,
+avg(livros.preco) as valor_medio_itens
+from clientes
+	inner join vendas on clientes.id_cliente = vendas.id_cliente
+	inner join itens_venda on itens_venda.id_venda = vendas.id_venda
+    inner join livros on livros. id_livro = itens_venda.id_livro
+group by clientes.nome_cliente
+order by total_itens_venda desc;
 
 
 
