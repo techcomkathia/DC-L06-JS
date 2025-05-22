@@ -1,0 +1,15 @@
+- Variáveis (let, var, const)
+
+- Funções :
+    - Com retorno
+    - Arrow Function
+    - Funções de callback
+    - Funções assíncronas : (then, async/await, catch )
+
+- Laços de repetição (for e while)
+- Condicionais (if/else if/ else)
+
+- Objetos : atributos e métodos
+
+- Arrays: métodos ( forEach, map, filter, reduce)
+

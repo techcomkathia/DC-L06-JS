@@ -5,3 +5,19 @@
 
 // exporte o módulo e use-o no arquivo main
 // npm install prompt-sync
+
+const prompt = require('prompt-sync')()
+
+function criarArray(n){
+    let meuArray =[]
+    
+    for(let i = 0; i< n; i++){
+        let valor = prompt(`Digite o ${i+1}º  valor (${i+1}/${n}): `)
+        meuArray.push(valor)
+    }
+
+    console.log(meuArray.length)
+    return meuArray
+}
+
+module.exports = criarArray
