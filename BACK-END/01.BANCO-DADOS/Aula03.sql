@@ -16,7 +16,7 @@ CREATE TABLE projects (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(45) NOT NULL,
     description VARCHAR(45),
-    date VARCHAR(45)
+    date VARCHAR(45) -- date
 );
 
 -- Tabela de associação users_has_projects
