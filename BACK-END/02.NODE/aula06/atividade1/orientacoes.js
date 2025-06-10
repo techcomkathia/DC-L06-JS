@@ -15,4 +15,4 @@ Após criar as configurações, exporte o módulo para utilizar nos arquivos de 
 
 
 3) Crie o modelo Livros. Este modelo se relaciona com os modelos Autores e Categorias.
-Se atente a configurações de relacionamento entre os modelos.
+Se atente a configurações de relacionamento entre os modelos. */
