@@ -19,3 +19,5 @@ const Projects = sequelize.define('projects', {
         type: DataTypes.DATE
     }
 })
+
+module.exports = Projects
