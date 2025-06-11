@@ -11,7 +11,7 @@ Após criar as configurações, exporte o módulo para utilizar nos arquivos de 
 
 
 
-2) Crie os 2 modelos do banco de dados: Autores e Categorias (Possuem apenas chaves primárias). Lembre-se de exportar o módulo para utilizar nos arquivos de definição dos outros modelos com os quais se relacionam 
+2) Crie os 2 modelos tabelas do banco de dados: Autores e Categorias (Possuem apenas chaves primárias). Lembre-se de exportar o módulo para utilizar nos arquivos de definição dos outros modelos com os quais se relacionam 
 
 
 3) Crie o modelo Livros. Este modelo se relaciona com os modelos Autores e Categorias.

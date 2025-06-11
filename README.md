@@ -46,7 +46,7 @@ O curso está dividido em módulos, cobrindo os principais conceitos e ferrament
 7. **Testes e Qualidade de Código**
    - Testes unitários e integração com Jest e Supertest
    - Testes end-to-end com Cypress
-   - Linters e boas práticas de código
+
 
 
 
