@@ -1,0 +1,25 @@
+-MVC Conceito
+
+-Visualização (V): aplicação a parte (Site, aplicativo ou programa desktop )
+--------------------------------------------------------------------------------
+
+API - RestFull
+
+server - autenticao banco de dados e inicializa a api. Deixa ela disponível para uso.
+app - reunir todas as rotas da aplicação
+
+CONTROLLER
+-Rotas
+-Controladores
+-Serviços (regras de negócio)
+
+MODEL
+-DAO (Data Access Object - encapsula o acesso aos dados)
+-Modelos (reprentação das tabelas do banco)
+-Conexao banco
+-Banco ( credenciais de acesso)
+
+
+----------------------------------------------------------------------------------
+
+- BANCO DE DADOS (Estrutura a parte da API. Idependente do tipo de banco de dados)
