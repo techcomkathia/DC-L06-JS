@@ -2,7 +2,8 @@
 const { DataTypes } = require('sequelize');
 const sequelize = require('../config/banco');
 
-const Produto = sequelize.define('Produto', {
+const Produto = sequelize.define('Produtos', 
+    {
     id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
@@ -20,6 +21,9 @@ const Produto = sequelize.define('Produto', {
         type: DataTypes.INTEGER,
         allowNull: false
     }
-});
+    },
+    {
+        timestamps: false
+    });
 
 module.exports = Produto;

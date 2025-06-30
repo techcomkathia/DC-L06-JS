@@ -18,11 +18,22 @@ async function postUsuario(dados) {
         // Criptografa a senha
         const salt = 10;
         const hash = await bcrypt.hash(dados.senha, salt);
-        dados.senha = hash;
+        
 
-        const novoUsuario = await Usuario.create(dados);
+        const existeUsuario = await Usuario.findOne({ where: { email: dados.email } });
+
+
+        if (existeUsuario) {
+            return { status: 400, erro: "Email ja cadastrado" };
+        }
+
+        const novoUsuario = await Usuario.create({
+            nome: dados.nome,
+            email: dados.email,
+            senha: hash,
+            tipo: dados.tipo
+        });
         return { status: 201, mensagem: "Usuário criado com sucesso", dados: {
-            id: novoUsuario.id,
             nome: novoUsuario.nome,
             email: novoUsuario.email,
             tipo: novoUsuario.tipo

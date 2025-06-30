@@ -1,7 +1,7 @@
 // services/loginService.js
 const usuarioService = require('./usuarioService');
 
-const usuario = require('../models/usuarioModel');
+const Usuario = require('../models/usuarioModel');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 
@@ -11,7 +11,7 @@ async function login(email, senha) {
     try {
         //1º passo: buscar o usuário pelo email
 
-        const usuario = await usuario.findOne({ where: { email: email } });
+        const usuario = await Usuario.findOne({ where: { email: email } });
 
         if(!usuario) {
           {
