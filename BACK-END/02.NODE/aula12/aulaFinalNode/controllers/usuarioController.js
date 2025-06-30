@@ -6,7 +6,7 @@ async function getUsuarios(req, res) {
 
     try{
         const usuarios = await usuarioService.getUsuarios();
-        res.status(usuarios.status).json(usuarios.dados);
+        res.status(usuarios.status).json(usuarios);
     } catch (error) {
         res.status(400).json({ erro: error.message });
     }
