@@ -13,11 +13,14 @@ async function login(email, senha) {
         //se não existir retorna erro
         //se existir, continua
         //2º passo: comparar a senha
+        // ----------- bcrypt.compare(senhaDigitada, hashArmazenadoNoBanco)--> retorna um boolean
         //senha digitada pelo usuario comparada com o hash armazenado no banco
         //se nao for igual, retorna erro
         //se for igual, continua
+
         //3º passo: criar o token
         // lógica necessária para a criação do token de autenticação
+        // jwt.sign(payload, palavraSecreta, options) ---> options: {expiresIn: '1h'}
         //nome, email e tipo serão informados no payload
         // token de autenticação expira em 1 hora
         return
