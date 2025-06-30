@@ -1,7 +1,7 @@
 // config/banco.js
 const { Sequelize } = require('sequelize');
 
-const sequelize = new Sequelize('nome_do_banco', 'usuario_do_banco', 'senha_do_banco', {
+const sequelize = new Sequelize('aulaFinalNode', 'root', 'km2015km', {
     host: 'localhost',
     dialect: 'mysql',
     port: 3306
