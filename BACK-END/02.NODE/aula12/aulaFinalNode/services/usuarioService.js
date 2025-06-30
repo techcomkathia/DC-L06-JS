@@ -16,7 +16,7 @@ async function getUsuarios() {
 async function postUsuario(dados) {
     try {
         // Criptografa a senha
-        const salt = await bcrypt.genSalt(10);
+        const salt = 10;
         const hash = await bcrypt.hash(dados.senha, salt);
         dados.senha = hash;
 

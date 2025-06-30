@@ -171,6 +171,7 @@ Authorization: Bearer <seu-token>
 ## ✍️Objetivos
 
 - Crie os services para produtos
+- serviço do login - ok
 - Crie os controllers para usuarios e login
 - Crie os middleweres de validacao e autenticação
 - Crie as rotas para produtos e login. 
