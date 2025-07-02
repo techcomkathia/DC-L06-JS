@@ -5,7 +5,7 @@ const Usuario = require('../models/usuarioModel');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 
-const SECRET_KEY = "seu_segredo_super_secreto"; // ideal seria usar process.env
+const SECRET_KEY = "2"; // ideal seria usar process.env
 
 async function login(email, senha) {
     try {
@@ -19,7 +19,9 @@ async function login(email, senha) {
           }
         }
 
-        if(!bcrypt.compare(senha, usuario.senha)) {
+        const ehSenhaCorreta = await bcrypt.compare(senha, usuario.senha);
+
+        if(!ehSenhaCorreta) {
             //2º passo: comparar a senha
         // ----------- bcrypt.compare(senhaDigitada, hashArmazenadoNoBanco)--> retorna um boolean
         //senha digitada pelo usuario comparada com o hash armazenado no banco
@@ -50,6 +52,4 @@ async function login(email, senha) {
     }
 }
 
-module.exports = {
-    login
-};
+module.exports = login

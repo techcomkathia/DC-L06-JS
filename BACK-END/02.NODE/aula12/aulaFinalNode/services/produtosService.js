@@ -12,7 +12,24 @@ async function getProdutoId(id) {
 }
 
 async function postProduto(dados) {
-    return
+
+    const {nome, preco, quantidade } = dados
+    try{
+        const novoProduto = await Produto.create({
+            nome,
+            preco,
+            quantidade
+        })
+        
+        if(!novoProduto){
+            return {status: 400, erro: "Erro ao criar produto"}
+        }
+        return {status: 201, mensagem: "Produto criado com sucesso", dados: novoProduto}
+    }
+    catch(error){
+        return {status: 400, erro: "Erro ao criar produto: " + error.message}
+    }
+   
 }
 
 module.exports = {

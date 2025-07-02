@@ -5,7 +5,7 @@ const app = express();
 app.use(express.json())
 
 const produtoRoutes = require('./routes/produtoRoutes');
-const usuarioRoutes = require('./routes/usuarioRoutes');
+ const usuarioRoutes = require('./routes/usuarioRoutes');
 const loginRoute = require('./routes/loginRoute');
 
 // Rotas

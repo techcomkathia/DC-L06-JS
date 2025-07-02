@@ -21,6 +21,9 @@ async function postUsuario(req, res) {
 
     try {
         const novoUsuario = await usuarioService.postUsuario(dados);
+        if(novoUsuario.erro) {
+            return res.status(novoUsuario.status).json({ novoUsuario });
+        }
         res.status(novoUsuario.status).json(novoUsuario.dados);
     } catch (error) {
         res.status(400).json({ erro: error.message });
