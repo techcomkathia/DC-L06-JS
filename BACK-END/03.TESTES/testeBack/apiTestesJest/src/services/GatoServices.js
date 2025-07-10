@@ -8,28 +8,28 @@ const verificarToken = require('../middleware/authMiddleware');
 
 app.use(express.json());
 
-const getGatos = (req, res) => {
+const getGatos = () => {
     //varias linhas de validação de dados e regras
     //usar middleware para atenticar
     //delegar persistencia para camada de acesso a dados
     Gato.findAll()
     .then(gatos => {
-        res.json({statusCode: 200, 
+        return ({statusCode: 200, 
             dados: gatos});
     })
     .catch(erro => {
-res.status(500).json({ message: 'Erro ao buscar gatos', erro });    })
+        return ({ statusCode: 500, message: 'Erro ao buscar gatos', erro });    })
 }
 
-const createGato = async (req, res) => {
-    const { primeiroNome, sobreNome, email, senha } = req.body;
+const createGato = async (novoGato) => {
+    const { primeiroNome, sobreNome, email, senha } = novoGato;
     const saltRounds = 10;
 
     try {
         // Verificar se o e-mail já existe
         const gatoExistente = await Gato.findOne({ where: { email: email } });
         if (gatoExistente) {
-            return res.status(400).json({
+            return ({ statusCode: 400,
                 message: 'E-mail já cadastrado'
             });
         }
@@ -45,13 +45,15 @@ const createGato = async (req, res) => {
             senha: senhaCriptografada
         });
 
-        res.json({
+        return({
+            statusCode: 201,
             message: 'Gato criado com sucesso',
             gato: novoGato
         });
     } catch (erro) {
         console.log(erro);
-        res.status(500).json({
+        return({
+            statusCode: 500,
             message: 'Erro ao criar gato'
         });
     }

@@ -12,7 +12,7 @@ require('dotenv').config();
 //   }
 // );
 
-const sequelize = new Sequelize('gatos',
+const sequelize = new Sequelize('api_gatos',
   'root', 'km2015km', 
   {
       host: '127.0.0.1',
@@ -22,16 +22,20 @@ const sequelize = new Sequelize('gatos',
   }
 );
 
-sequelize.authenticate()
-  .then(() => {    
-    console.log('Conexão bem-sucedida com o banco de dados.')
-    // console.log(process.env.ACESSOBANCO);
-  }).catch(err => {
-    // console.log(process.env.ACESSOBANCO)
-    console.error('Não foi possível conectar ao banco de dados:', err);
-  });
+async function conectarBanco(){
+    try {
+        await sequelize.authenticate();
+        console.log('Conexão bem-sucedida com o banco de dados.')
+        return({ok: true, msg: 'Conexão bem-sucedida com o banco de dados.'})
+        // console.log(process.env.ACESSOBANCO);
+      } catch (error) {
+        // console.log(process.env.ACESSOBANCO)
+        console.error('Não foi possível conectar ao banco de dados:', error);
+        return({ok: false, msg: 'Erro ao conectar ao banco de dados.'})
+      }
+}
 
-module.exports = sequelize;
+module.exports = {conectarBanco, sequelize}; // Exportando o sequelize;
 
 //COMANDO PARA EXECUTAR O ARQUIVO 
 //node --env-file=../.env server.js
